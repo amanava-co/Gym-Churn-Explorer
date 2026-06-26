@@ -182,7 +182,7 @@ export function PersonasView({ id, members, onNavigateToTab }: PersonasViewProps
       action: "Intervir Agora. Ligação do instrutor responsável sugerindo readequação imediata do treino de força."
     },
     {
-      name: "Pedro",
+      name: "Gustavo",
       personaKey: "carlos",
       personaName: "Carlos, o Pagante Fantasma",
       quadrant: "intervir_agora",
@@ -193,7 +193,7 @@ export function PersonasView({ id, members, onNavigateToTab }: PersonasViewProps
       textColor: "text-red-700",
       value: "Muito Alto (LTV R$ 560)",
       risk: "Extremo (89% Churn)",
-      desc: "Vencimento de plano anual se aproxima com zero frequência recente.",
+      desc: "Vencimento de plano anual se aproxima com zero frequência recente. Nota Analítica: Gustavo está vinculado à persona 'Carlos' (e não 'Ana') porque possui um Valor/LTV muito alto (eixo X=88) e histórico longo, características do 'Pagante Fantasma', enquanto a Ana tem LTV mediano e queda brusca recente.",
       action: "Intervir Agora. Oferecer migração para plano menor flexível ou bônus de renovação agressivo de 20% para restabelecer hábito."
     },
     {
@@ -949,6 +949,11 @@ export function PersonasView({ id, members, onNavigateToTab }: PersonasViewProps
                       <strong className="block text-brand-ink/50 text-[10px] uppercase">Fletimento LTV:</strong>
                       <span className="font-bold text-green-700">{selectedDot.value}</span>
                     </div>
+                  </div>
+
+                  <div className="bg-white border p-2.5 border-brand-line/20 rounded-none text-[11px] leading-relaxed mb-1">
+                    <strong className="block mb-0.5 text-brand-ink text-[10px] uppercase">📊 Nota Analítica:</strong>
+                    {selectedDot.desc}
                   </div>
 
                   <div className="bg-white border p-2.5 border-brand-line/20 rounded-none text-[11px] leading-relaxed">
