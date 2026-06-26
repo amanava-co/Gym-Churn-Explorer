@@ -1,0 +1,6 @@
+{
+  "name": "Gym Churn & Retention BI",
+  "description": "Explore and predict gym member churn, compute dynamic Seaborn-style correlation matrix heatmaps, customize profiles in an AI simulator, and export data dynamically.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
